@@ -168,8 +168,13 @@ export default async function NamePage({
               <p className="font-charm text-justify">
                 Cảm ơn những{" "}
                 <span className="text-[#ff8091]">hy sinh và yêu thương</span> mà
-                {user.id === "emiu" ? " em" : " chị/em"} đã mang đến cho cuộc
-                sống này và làm nó trở nên tràn đầy sức sống.
+                {user.id === "emiu"
+                  ? " em"
+                  : user.id === "meiu"
+                  ? " mẹ"
+                  : " chị/em"}{" "}
+                đã mang đến cho cuộc sống này và làm nó trở nên tràn đầy sức
+                sống.
               </p>
             </div>
           </RotateInCornerWrapper>
