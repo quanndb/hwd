@@ -19,10 +19,18 @@ export default async function NamePage({
   const user = USERS.find((user) => user.id === name);
   if (!user) return notFound();
   try {
-    await fetch("http://localhost:3000/api/session", {
-      method: "POST",
-      body: JSON.stringify({ name: user.name }),
-    });
+    // check local or prod to run api
+    await fetch(
+      `${
+        process.env.NODE_ENV === "production"
+          ? process.env.NEXT_PUBLIC_API_URL
+          : "http://localhost:3000"
+      }/api/session`,
+      {
+        method: "POST",
+        body: JSON.stringify({ name: user.name }),
+      }
+    );
   } catch (e) {
     console.log(e);
   }
