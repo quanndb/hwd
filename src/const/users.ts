@@ -12,6 +12,13 @@ const USERS = [
       "Chúc em một ngày “20/10” đầy ý nghĩa, em xứng đáng với tất cả những điều tốt đẹp. Chúc em luôn rạng rỡ, mạnh mẽ và sống đúng với điều khiến em thấy hạnh phúc nhất. 🌺",
   },
   {
+    id: "meiu",
+    name: "Mẹ yêu 🌸",
+    images: ["/resources/meiu/meiu1.png", "/resources/meiu/meiu2.png"],
+    message:
+      "Chúc mẹ yêu của con một ngày 20/10 thật nhiều niềm vui, sức khỏe và hạnh phúc. Cảm ơn mẹ đã luôn là điểm tựa vững chắc và là người phụ nữ tuyệt vời nhất trong cuộc đời con 💐",
+  },
+  {
     id: "hoannt",
     name: "Chị Hoàn 👩‍💼",
     images: [

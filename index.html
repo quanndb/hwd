@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Export Names to PNG</title>
+    <!-- Dùng link Google Fonts chuẩn -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Charm", cursive;
+        background: #fffafc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        color: #e91e63;
+      }
+      button {
+        background: #e91e63;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      button:hover {
+        background: #d81b60;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Xuất ảnh PNG từ danh sách tên</h1>
+    <input type="file" id="fileInput" accept=".txt" />
+    <button id="generateBtn">Tạo ảnh PNG</button>
+
+    <script>
+      document
+        .getElementById("generateBtn")
+        .addEventListener("click", async () => {
+          const fileInput = document.getElementById("fileInput");
+          if (!fileInput.files.length) {
+            alert("Hãy chọn file .txt chứa danh sách tên trước!");
+            return;
+          }
+
+          const file = fileInput.files[0];
+          const text = await file.text();
+          const names = text
+            .split(/\r?\n/)
+            .map((l) => l.trim())
+            .filter((l) => l);
+
+          // Đợi font Charm load xong
+          await document.fonts.ready;
+
+          for (const name of names) {
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+
+            const fontSize = 48;
+            ctx.font = `${fontSize}px Charm`;
+            const textWidth = ctx.measureText(name).width;
+
+            canvas.width = textWidth + 100;
+            canvas.height = fontSize * 2;
+
+            ctx.fillStyle = "#fffafc";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#e91e63";
+            ctx.font = `${fontSize}px Charm`;
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText(name, canvas.width / 2, canvas.height / 2);
+
+            const link = document.createElement("a");
+            link.download = `${name}.png`;
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+
+            await new Promise((r) => setTimeout(r, 300)); // chờ giữa các lượt tải
+          }
+
+          alert("✅ Hoàn tất! Tất cả ảnh PNG đã được tải xuống.");
+        });
+    </script>
+  </body>
+</html>
