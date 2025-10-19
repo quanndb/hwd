@@ -150,10 +150,20 @@ export default async function NamePage({
             className="bg-[#fbfaf8] w-full md:w-[50%] h-fit shadow-md/30 rounded-md"
           >
             <div className="w-full h-full p-5 flex flex-col items-center justify-center gap-3">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center relative">
                 <AutoImageSlider images={user.images} />
+                {user.id === "emiu" && (
+                  <Image
+                    src="/assets/heart.gif"
+                    width={100}
+                    height={100}
+                    alt="heart"
+                    className="absolute bottom-[22%] right-0"
+                  />
+                )}
                 <p className="font-charm my-2">
-                  Kính gửi: <span className="text-[#ff8091]">{user.name}</span>
+                  {user.id === "emiu" ? "Gửi" : "Kính gửi"}:{" "}
+                  <span className="text-[#ff8091]">{user.name}</span>
                 </p>
               </div>
               <span>

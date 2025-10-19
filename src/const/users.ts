@@ -9,7 +9,7 @@ const USERS = [
       "/resources/emiu/chicken4.png",
     ],
     message:
-      "Chúc em một ngày “20/10” đầy ý nghĩa, em xứng đáng với tất cả những điều tốt đẹp. Chúc em luôn rạng rỡ, mạnh mẽ và sống đúng với điều khiến em thấy hạnh phúc nhất. 🌺",
+      "Chúc em một ngày “20/10” đầy ý nghĩa, em xứng đáng với tất cả những điều tốt đẹp. Chúc em luôn rạng rỡ, mạnh mẽ và sống đúng với điều khiến em thấy hạnh phúc nhất. 🌺♥️",
   },
   {
     id: "meiu",
