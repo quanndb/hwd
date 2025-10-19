@@ -140,6 +140,18 @@ const USERS = [
     message:
       "Cảm ơn Nhật Minh vì những ngày dài làm bạn với “sổ sách” mà vẫn luôn nhẹ nhàng và tươi tắn! Chúc Nhật Minh lúc nào cũng “cân bằng hoàn hảo” giữa công việc và cuộc sống, giữa những con số khô khan và nụ cười ấm áp 💕",
   },
+  {
+    id: "chungnq",
+    name: "Quốc Chung 🌷",
+    images: [
+      "/resources/chungnq/chungnq1.png",
+      "/resources/chungnq/chungnq2.png",
+      "/resources/chungnq/chungnq3.png",
+      "/resources/chungnq/chungnq4.png",
+    ],
+    message:
+      'Chúc Quốc Chung một ngày 20/10 thật rực rỡ và nhiều cảm hứng — như chính "những bản thiết kế" đầy sáng tạo của mình! Chúc Quốc Chung luôn tự tin, hạnh phúc và tiếp tục tỏa sáng theo cách rất riêng của mình 💫🎨',
+  },
 ];
 
 export default USERS;
