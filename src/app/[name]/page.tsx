@@ -101,7 +101,7 @@ export default async function NamePage({
           />
         </CloudFloatWrapper>
       </React.Fragment>
-      <div className="container mx-auto px-4 h-full relative z-1 text-center flex justify-center md:items-center">
+      <div className="container mx-auto px-4 h-full relative z-4 text-center flex justify-center md:items-center">
         <div className="w-full h-fit flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 mt-[18%] md:mt-0">
           {/* text */}
           <div className="flex flex-col items-center gap-y-[5px] md:gap-y-5">
