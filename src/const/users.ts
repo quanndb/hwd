@@ -52,7 +52,7 @@ const USERS = [
       "/resources/anhpm/anhpm4.png",
     ],
     message:
-      "Cảm ơn Minh Anh vì đã luôn mang đến những chiến dịch truyền cảm hứng và giúp thương hiệu ngày càng tỏa sáng. Chúc Minh Anh luôn “viral” trong công việc, “trend” trong phong cách và “happy” trong cuộc sống! 💖",
+      'Chúc Minh Anh luôn xinh đẹp, vui vẻ và tràn đầy cảm hứng sáng tạo. Cảm ơn vì luôn mang lại những "content thú vị" và "năng lượng tích cực" cho mọi người. Chúc Minh Anh một ngày 20/10 thật ý nghĩa và nhiều niềm vui! 💐',
   },
   {
     id: "vanlt",
@@ -64,7 +64,7 @@ const USERS = [
       "/resources/vanlt/vanlt4.png",
     ],
     message:
-      "Cảm ơn Thảo Vân vì đã luôn mang đến những chiến dịch truyền cảm hứng và giúp thương hiệu ngày càng tỏa sáng. Chúc Thảo Vân luôn “viral” trong công việc, “trend” trong phong cách và “happy” trong cuộc sống! 💖",
+      "Cảm ơn Thảo Vân vì đã luôn mang đến những chiến dịch truyền cảm hứng và giúp thương hiệu ngày càng tỏa sáng. Chúc Thảo Vân luôn xinh đẹp, “viral” trong công việc, “trend” trong phong cách và “happy” trong cuộc sống! 💖",
   },
   {
     id: "nhunq",
@@ -76,7 +76,7 @@ const USERS = [
       "/resources/nhunq/nhunq4.png",
     ],
     message:
-      "Cảm ơn sự chăm chỉ, âm thầm nhưng đầy trách nhiệm của chị đã giúp mọi thứ luôn “vào guồng” ổn định. Chúc chị luôn được yêu thương, hạnh phúc, và luôn tỏa sáng trong mọi vai trò mình đảm nhận! 🌸",
+      'Chúc chị 20/10 thật vui và đầy năng lượng! Cảm ơn chị vì luôn là người đứng sau "những chuyến đi trọn vẹn" — vừa lo chu đáo, vừa truyền cảm hứng và tạo nên bao kỷ niệm đẹp cho mọi người. Chúc chị luôn rạng rỡ, vui vẻ và hạnh phúc trên mọi hành trình 💐',
   },
   {
     id: "hientt",
@@ -88,7 +88,7 @@ const USERS = [
       "/resources/hientt/hientt4.png",
     ],
     message:
-      "Cảm ơn sự chăm chỉ, âm thầm nhưng đầy trách nhiệm của chị đã giúp mọi thứ luôn “vào guồng” ổn định. Chúc chị luôn được yêu thương, hạnh phúc, và luôn tỏa sáng trong mọi vai trò mình đảm nhận! 🌷",
+      'Chúc chị 20/10 thật vui và đầy năng lượng! Cảm ơn chị vì luôn là người đứng sau "những chuyến đi trọn vẹn" — vừa lo chu đáo, vừa truyền cảm hứng và tạo nên bao kỷ niệm đẹp cho mọi người. Chúc chị luôn rạng rỡ, vui vẻ và hạnh phúc trên mọi hành trình 💐',
   },
   {
     id: "uyennp",
