@@ -18,22 +18,22 @@ export default async function NamePage({
   const { name } = await params;
   const user = USERS.find((user) => user.id === name);
   if (!user) return notFound();
-  // try {
-  //   // check local or prod to run api
-  //   await fetch(
-  //     `${
-  //       process.env.NODE_ENV === "production"
-  //         ? process.env.NEXT_PUBLIC_API_URL
-  //         : "http://localhost:3000"
-  //     }/api/session`,
-  //     {
-  //       method: "POST",
-  //       body: JSON.stringify({ name: user.name }),
-  //     }
-  //   );
-  // } catch (e) {
-  //   console.log(e);
-  // }
+  try {
+    // check local or prod to run api
+    await fetch(
+      `${
+        process.env.NODE_ENV === "production"
+          ? process.env.NEXT_PUBLIC_API_URL
+          : "http://localhost:3000"
+      }/api/session`,
+      {
+        method: "POST",
+        body: JSON.stringify({ name: user.name }),
+      }
+    );
+  } catch (e) {
+    console.log(e);
+  }
   return (
     <div className="relative h-screen bg-gradient-to-b from-sky-200 via-white to-rose-100 overflow-hidden text-black">
       {/* decoration */}
