@@ -9,9 +9,3 @@ services:
     ports:
       - "3000:3000"
     environment:
-    networks:
-      - ttl_network
-
-networks:
-  ttl_network:
-    driver: bridge
